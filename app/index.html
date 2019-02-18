@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Video player</title>
+  </head>
+  <body>
+    <div id="video-container" class="video">
+      <h1 class="video__title">Custom video player</h1>
+
+      <div class="video__player">
+        <video
+          width="400"
+          height="300"
+          src="video/videoPlayer/AudiA4.mp4"
+          type="video/mp4"
+          poster="images/videoPlayer/maxresdefault.jpg"
+          controls
+        ></video>
+        <!-- Video -->
+
+        <div class="video__custom-controls">
+          <!-- Add class show to show customs control-->
+          <button class="video__play video__btn">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="video__pause video__btn">
+            <i class="fas fa-pause"></i>
+          </button>
+          <div class="video__timline-wrapper">
+            <div class="video__timline">
+              <div class="video__timline-inner"></div>
+            </div>
+            <span class="video__time">00.00</span>
+          </div>
+
+          <button class="video__full-screen video__btn">
+            <i
+              class="fas fa-arrows-alt"
+              data-change="fa-compress-arrows-alt"
+            ></i>
+          </button>
+        </div>
+        <!-- Custom Controls -->
+      </div>
+    </div>
+
+    <script src="scripts/video.js"></script>
+  </body>
+</html>
