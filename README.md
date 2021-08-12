@@ -1,1 +1,1 @@
-# custom_video_player
+# Custom HTML Video Player
